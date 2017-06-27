@@ -28,31 +28,31 @@
                 -moz-background-size: cover;
                 -o-background-size: cover;
                 background-size: cover;
-            }
-
-            header .container {
                 padding-top: 50px;
                 text-align: center;
             }
 
-            header img {
+            .container {
+            }
+
+            .logo {
                 width: 256px;
                 height: 256px;
             }
 
-            header h1,
-            header h2 {
+            h1,
+            h2 {
                 margin: 20px 40px;
                 color: #333;
             }
 
-            header h1 span {
+            h1 span {
                 padding: 5px 10px;
                 font-size: 1.4em;
                 background-color: #fff;
             }
 
-            header h2 span {
+            h2 span {
                 padding: 0 10px;
                 line-height: 1.2;
                 font-size: 1em;
@@ -61,18 +61,37 @@
                 box-decoration-break: clone;
             }
 
+            .soon {
+                width: 200px;
+                background: #333;
+                position: absolute;
+                top: 25px;
+                right: -50px;
+                left: auto;
+                text-align: center;
+                font-weight: bold;
+                line-height: 50px;
+                letter-spacing: 1px;
+                color: #f0f0f0;
+                transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+            }
+
             @media (min-width: 768px) {
-                header .container {
+                .container {
                     padding-top: 120px;
                 }
-                header h1,
-                header h2 {
+
+                h1,
+                h2 {
                     margin: 20px 100px;
                 }
-                header h1 span {
+
+                h1 span {
                     font-size: 2em;
                 }
-                header h2 span {
+
+                h2 span {
                     font-size: 1.4em;
                 }
             }
@@ -80,11 +99,10 @@
     </head>
     <body>
         <header>
-            <div class="container">
-                <img src="/img/TourManager.png" alt="">
-                <h1><span>TourManager</span></h1>
-                <h2><span>Seamlessly manage your touring schedule across multiple tours, locations and groups</span></h2>
-            </div>
+            <img class="logo" src="/img/TourManager.png" alt="">
+            <h1><span>TourManager</span></h1>
+            <h2><span>Seamlessly manage your touring schedule across multiple tours, locations and groups</span></h2>
+            <p class="soon">Coming Soon</p>
         </header>
         <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/3446658.js"></script>
     </body>
